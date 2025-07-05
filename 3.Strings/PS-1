@@ -1,0 +1,5 @@
+### Display a user enterd name followed by Good AfterNoon using input() function
+
+name = input("Enter your name: ")
+
+print(f"Good Afternoon, {name} ") 
