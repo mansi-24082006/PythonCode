@@ -1,0 +1,4 @@
+### COUNT THE NUMBER OF ZEROS IN THE TUPLE
+
+A = (7,0,8,0,0,9)
+A.count(0)
