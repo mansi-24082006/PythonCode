@@ -1,5 +1,0 @@
-###FORMAT FOLLOWING LETTER USING ESCAPE SEQUENCE CHAR...
-
-TEXT = "Dear Harry,\n This python course is nice.\n Thanks!"
-
-print(TEXT)
