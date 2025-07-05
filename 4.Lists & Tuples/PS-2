@@ -1,0 +1,14 @@
+###ACCEPT MARKS OF 6 STUDENTS AND DISPLAY THEN IN A SORTED MANNER
+
+MARKS = []
+
+# Loop 6 times to get input from the user
+for i in range(6):
+    display = int(input(f"Enter marks {i + 1}: "))
+    MARKS.append(display)
+
+# Sort the list in ascending order
+MARKS.sort()
+
+# Now print the sorted list
+print("YOUR MARKS IN SORTED ORDER:", MARKS)
