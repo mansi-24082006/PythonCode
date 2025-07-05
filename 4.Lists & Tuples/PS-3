@@ -1,0 +1,6 @@
+###CHECK THE TUPLE CANNOT BE CHANGED IN PYTHON
+
+my_tuple = (10, 20, 30)
+
+# Try to change the first element
+my_tuple[0] = 100  # ❌ This will raise an error
