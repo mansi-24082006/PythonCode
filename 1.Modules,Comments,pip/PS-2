@@ -1,20 +1,3 @@
 ####using repl and print the table of 5 using it in python
-
-
-1. Open Replit:
-Go to https://replit.com and log in or sign up.
-
-🔹 2. Create a New Repl:
-Click on “+ Create” or “+ New Repl”
-
-Select Language: Python
-
-Click “Create Repl”
-
-🔹 3. Paste This Code in main.py:
-python
-Copy
-Edit
-# Table of 5
-for i in range(1, 11):
-    print(f"5 x {i} = {5 * i}")
+that will be in like cmd command will be use 
+python 
