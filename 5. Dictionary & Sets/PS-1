@@ -1,0 +1,9 @@
+###CREATE A DIRECTORY OF HINDI WORDS AS THEIR ENGLISH TRANSLATE
+
+dicts = {"paani": "water",
+        "roti": "bread", 
+        "ghar": "home",
+        "dost": "friend"}
+print("Hindi to English Dictionary:",dicts)
+dict = input("Enter the word you want meaning of: ")
+print(dicts[dict])
