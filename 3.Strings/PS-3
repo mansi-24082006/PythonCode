@@ -1,0 +1,5 @@
+####DETECT DOUBLE SPACES IN A STRING
+
+name = "🌟Dimple's  smile can light up even the dullest day  she's a walking sunshine! ☀️✨ "
+
+print(name.find("  "))
