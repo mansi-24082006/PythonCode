@@ -1,0 +1,23 @@
+import os
+
+1..
+# Importing the built-in 'os' module which allows interaction with the operating system
+import os
+
+# Get the current working directory (the folder where this Python script is running)
+cwd = os.getcwd()
+
+# Print the current working directory to the console
+print("Current working directory:", cwd)
+
+
+
+2...
+# Select the directory whose content you want to list 
+directory_path = '/'
+
+# Use the os module to list the directory content 
+contents = os.listdir(directory_path)
+
+# Print the contents of the directory 
+print(contents)
