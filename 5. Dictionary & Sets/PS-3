@@ -1,0 +1,7 @@
+###SET WITH 18(INT) AND "18"(STR) AS A VALUES IN IT
+
+s = set()
+s.add(18)
+s.add("18")
+
+print(s)
