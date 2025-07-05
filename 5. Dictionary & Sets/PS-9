@@ -1,0 +1,5 @@
+###can change the values inside a list which contained in set s
+
+s = {8, 7, 12, "Harry", [1,2]}
+//No, you cannot put a list inside a set — and therefore you cannot change its values either.
+s[4][0] = 9
