@@ -1,0 +1,4 @@
+###S={} WHAT IS THE TUPLE OF S?
+
+s = {}
+print(type(s)) //<class 'dict'>
