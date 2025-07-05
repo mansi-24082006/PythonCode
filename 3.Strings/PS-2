@@ -1,0 +1,7 @@
+### TO FILL IN A LETTER TEMPLATE GIVEN BELOW WITH NAME AND DATE
+
+letter = '''Dear <|Name|>, 
+You are selected! 
+<|Date|> '''
+
+print(letter.replace("<|Name|>", "DIMPLE").replace("<|Date|>", "24 August 2006"))
