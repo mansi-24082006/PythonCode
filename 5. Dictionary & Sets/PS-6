@@ -1,0 +1,35 @@
+###4 FRIENDS TO ENTER THEIR FAVOURITE LANGUAGE AS VALUES & USE KEYS THEIR NAMES ASSUME THAT NAMES ARE UNIQUE..
+
+1...
+fav_lang = {}  # Empty dictionary
+
+for i in range(4):
+    name = input(f"Enter friend {i+1}'s name: ")
+    lang = input(f"Enter {name}'s favorite language: ")
+    fav_lang[name] = lang  # Add name as key, language as value
+
+print("\nFavourite languages of your friends:")
+for name, lang in fav_lang.items():
+    print(f"{name} : {lang}")
+
+2...
+d = {}
+
+name = input("Enter friends name: ")
+lang = input("Enter Language name: ")
+d.update({name: lang})
+
+name = input("Enter friends name: ")
+lang = input("Enter Language name: ")
+d.update({name: lang})
+
+name = input("Enter friends name: ")
+lang = input("Enter Language name: ")
+d.update({name: lang})
+
+name = input("Enter friends name: ")
+lang = input("Enter Language name: ")
+d.update({name: lang})
+
+
+print(d)
