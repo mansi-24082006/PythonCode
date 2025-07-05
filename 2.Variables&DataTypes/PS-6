@@ -1,0 +1,5 @@
+####calculate square of a number by the user
+
+Num=int(input("Enter Number:"))
+Square=Num*Num
+print("Your Square is find :",Square);
