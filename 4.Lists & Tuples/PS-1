@@ -1,0 +1,13 @@
+###STORE SEVEN FOOD ITEMS  IN A LIST BY USER
+
+# Create an empty list to store food items
+food_items = []
+
+# Loop 7 times to get input from the user
+for i in range(7):
+    item = input(f"Enter food item {i + 1}: ")
+    food_items.append(item)
+
+# Display the final list of food items
+print("\nYour food list:")
+print(food_items)
