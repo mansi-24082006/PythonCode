@@ -1,0 +1,20 @@
+###if names of 2 friends are same; what will to the program in problem 6?
+
+fav_lang = {}  # Empty dictionary
+
+for i in range(4):
+    name = input(f"Enter friend {i+1}'s name: ")
+
+    # Check if name is already taken
+    while name in fav_lang:
+        print("This name already exists! Please enter a unique name.")
+        name = input(f"Enter friend {i+1}'s name again: ")
+
+    lang = input(f"Enter {name}'s favorite language: ")
+    fav_lang[name] = lang  # Add name as key, language as value
+
+print("\nFavourite languages of your friends:")
+for name, lang in fav_lang.items():
+    print(f"{name} : {lang}")
+
+
