@@ -1,0 +1,6 @@
+###Find average of two numbers entered by user
+
+x=int(input("Enter Num1:"))
+y=int(input("Enter Num2:"))
+z=(x+y)/2
+print("Your average is : ",z);
