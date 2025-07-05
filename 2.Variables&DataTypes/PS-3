@@ -1,0 +1,4 @@
+### chech the type of the variable assigned using input() Function
+
+a = input("Enter the value of a: ")
+print(type(a))
