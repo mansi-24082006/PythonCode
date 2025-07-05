@@ -1,0 +1,14 @@
+###Find a remainder when a number is divided by 2.
+
+# Input any two numbers
+num1 = int(input("Enter dividend: "))
+num2 = int(input("Enter divisor: "))
+
+# Actual remainder calculation
+remainder = num1 % num2
+
+# Only show if remainder is 2
+if remainder == 2:
+    print(f"Remainder when {num1} is divided by {num2} is {remainder}")
+else:
+    print("The remainder is not 2.")
