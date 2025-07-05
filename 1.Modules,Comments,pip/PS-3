@@ -1,0 +1,20 @@
+####install an external module and use it to perform and operation of your interest
+1...
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("Hey I am good")
+engine.runAndWait()
+
+2...
+import qrcode
+
+# Data to encode
+data = "https://openai.com"
+
+# Create QR Code instance
+qr = qrcode.make(data)
+
+# Save the QR code image
+qr.save("openai_qr.png")
+
+print("QR code generated and saved as openai_qr.png!")
