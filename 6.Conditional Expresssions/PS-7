@@ -1,0 +1,8 @@
+###WAP TO FIND OUT WHETHER A GIVEN POST IS TALKING ABOUT "HARRY" OR NOT.
+
+post = input("Enter the post: ")
+if("harry" in post.lower()):
+    print("This post is talking about harry")
+
+else:
+    print("This post is not talking about harry")
