@@ -1,0 +1,10 @@
+###HOW DO YOU PREVENT A PYTHON PRINT() FUNCTION TO PRINT A NEW AT THE END
+1..
+print("Hello", end="")  # No newline
+print("Cutie!")         # Continues on same line
+
+2...
+print("a")
+print("b")
+print("c", end="")
+print("d", end=""), 
