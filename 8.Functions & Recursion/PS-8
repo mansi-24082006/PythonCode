@@ -1,0 +1,9 @@
+###WRITE A PYTHON FUNCTION TO PRINT MULTIPLICATION TABLE OF A GIVEN NUMBER..
+
+def print_table(n):
+    print(f"\n📘 Multiplication Table of {n}:\n")
+    for i in range(1, 11):
+        print(f"{n} x {i:2} = {n * i}")
+# 🧠 Take input from the user
+num = int(input("Enter a number to print its multiplication table: "))
+print_table(num)
