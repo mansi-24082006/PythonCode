@@ -1,0 +1,16 @@
+### FIND OUT WHETHER A STUDENT IS PASS OR FAIL , IF IT REQUIRES TOTAL 40% AND AT LEAST 33% , IN EACH SUBJECT TO PASS . ASSUME 3 SUBJECTS AND TAKE MARKS AS AN INPUT FROM THE USER .
+
+# Take marks for 3 subjects
+sub1 = float(input("Enter marks of Subject 1: "))
+sub2 = float(input("Enter marks of Subject 2: "))
+sub3 = float(input("Enter marks of Subject 3: "))
+
+# Assume each subject is out of 100
+total = sub1 + sub2 + sub3
+percentage = total / 3
+
+# Check pass conditions
+if percentage >= 40 and sub1 >= 33 and sub2 >= 33 and sub3 >= 33:
+    print("✅ Student is PASS")
+else:
+    print("❌ Student is FAIL")
