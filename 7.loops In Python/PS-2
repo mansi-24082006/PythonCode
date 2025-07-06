@@ -1,0 +1,6 @@
+###WAP TO GREET ALL THE PERSON NAMES STORED IN A LIST L1 AND WHICH STARTS WITH S
+L1 = ["Harry", "Soham", "Sachin", "Rahul"]
+
+for name in L1:
+    if name.startswith('S'):
+        print(f"starts with s names is here: {name}!")
