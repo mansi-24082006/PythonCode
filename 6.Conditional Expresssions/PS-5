@@ -1,0 +1,10 @@
+### WAP WHICH FINDS OUT WHETHER A GIVEN NAME IS PRESENT IN A LIST OR NOT.
+
+l = ["Dimple", "Mansi", "Sharv", "Sweety"]
+
+name = input("Enter your name: ")
+
+if(name in l):
+    print("Your name is in the list")
+else:
+    print("Your name is not in the list")
