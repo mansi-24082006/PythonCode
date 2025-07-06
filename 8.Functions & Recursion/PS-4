@@ -1,0 +1,13 @@
+###WRITE A RECURSIVE FUNCTION TO CALCULATE THE SUM OF FIRST N NATURAL NUMBERS 
+
+def sum(n):
+    if n == 1:
+        return 1
+    else:
+        return n + sum(n - 1)
+
+# Take input from user
+n = int(input("Enter a number: "))
+
+# Call the recursive function
+print("Sum of first", n, "natural numbers is:", sum(n))
