@@ -1,0 +1,7 @@
+### wap to print yes when age eneterd by the user is greater than or equal to 18
+
+age = int(input("Enter Your Age:"))
+if(age>18):
+  print("yes you are eligible for voting..")
+else:
+  print("No you are not eligible for voting..")
