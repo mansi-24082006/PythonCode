@@ -1,0 +1,18 @@
+###WAP WHICH CONVERTS INCHES TO CMS
+
+def inches(inches):
+    return inches * 2.54
+
+# Take input from user
+inch_value = float(input("Enter length in inches: "))
+
+# Call the function
+cm_value = inches(inch_value)
+
+# Display result
+print(f"{inch_value} inches = {cm_value} cm")
+
+
+//
+Enter length in inches: 23
+23.0 inches = 58.42 cm
