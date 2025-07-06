@@ -1,0 +1,7 @@
+###wap to print multiplication table of n using for loop in reverserd order..
+
+n = int(input("Enter a number: "))
+
+print(f"\nMultiplication Table of {n} in Reverse Order:")
+for i in range(10, 0, -1):
+    print(f"{n} x {i} = {n * i}")
