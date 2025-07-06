@@ -1,0 +1,7 @@
+###WAP TO PRINT THE CONTENT OF A LIST USING WHILE LOOPS
+
+L= [1,"Harry",False,"Dimple","Mansi"]
+i=0
+while(i<len(l)):
+ print(l[i])
+ i+=1
