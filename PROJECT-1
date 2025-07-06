@@ -1,0 +1,28 @@
+###SNAKE,WATER,GUN GAME
+
+import random
+
+# List of possible choices
+choices = ['snake', 'water', 'gun']
+
+# Take user input
+user = input("Choose snake, water, or gun: ").lower()
+
+# Validate input
+if user not in choices:
+    print("❌ Invalid choice. Please choose 'snake', 'water', or 'gun'.")
+else:
+    comp = random.choice(choices)
+
+    print(f"\nYou chose: {user}")
+    print(f"Computer chose: {comp}")
+
+    # Decide winner
+    if user == comp:
+        print("Result: It's a draw!")
+    elif (user == 'snake' and comp == 'water') or \
+         (user == 'water' and comp == 'gun') or \
+         (user == 'gun' and comp == 'snake'):
+        print("Result: You win! 🎉")
+    else:
+        print("Result: Computer wins! 💻")
