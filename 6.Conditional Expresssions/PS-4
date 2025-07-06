@@ -1,0 +1,8 @@
+###FIND WHETHER A GIVEN USERNAME CONTAINS LESS THAN 10 CHARACTERS OR NOT...
+
+NAME = input("Enter username: ")
+
+if(len(NAME)<10):
+    print("Your username contains less than 10 characters")
+else:
+    print("Your username contains more than or equal to 10 characters")
