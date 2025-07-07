@@ -1,0 +1,11 @@
+### A File CONTAINS A WORD "DONKEY" MULTIPLE TIMES. YOU NEED TO WRITE A PROGRAM WHICH REPLACES THIS WORD WITH ###### BY UPDATING THE SAME FILE.
+
+word = "Donkey"
+
+with open("file.txt", "r") as f:
+    content = f.read()
+
+contentNew = content.replace(word, "######")
+
+with open("file.txt", "w") as f:
+    f.write(contentNew)
