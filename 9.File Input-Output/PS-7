@@ -1,0 +1,9 @@
+###WAP TO FIND OUT THE LINE NUMBER WHERE PYTHON IS PRESENT FROM QUES-6
+
+with open("log.txt") as f:
+    content = f.read()
+
+if("python" in content):
+    print("Yes python is present")
+else:
+    print("No Python is not present")
