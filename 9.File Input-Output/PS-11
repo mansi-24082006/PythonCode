@@ -1,0 +1,7 @@
+###WAP TO RENAME A FILE TO "RENAMED_BY_PYTHON.TXT"
+
+with open("old.txt") as f:
+    content = f.read()
+
+with open("renamed_by_python.txt", "w") as f:
+    f.write(content)
