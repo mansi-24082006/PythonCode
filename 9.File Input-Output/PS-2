@@ -1,0 +1,23 @@
+### THE GAME() FUNCTION IN A PROGRAM LETS A USER PLAY A GAME AND RETURNS THE SCORE AS AN INTEGER.YOU NEED TO READ A FILE 'HisCore.txt' WHICH IS EITHER BLANK OR CONTAINS THE PREVIOUS Hi-Score. YOU NEED TO WRITE A PROGRAM TO UPDATE THE Hi-Score WHENEVER GAME() BREAKS THE Hi-Score.
+
+import random
+def game(): 
+    print("You are playing the game..")
+    score = random.randint(1, 62)
+    # Fetch the hiscore
+    with open("hiscore.txt") as f:
+        hiscore = f.read()
+        if(hiscore!=""):
+            hiscore = int(hiscore)
+        else:
+            hiscore = 0
+
+    print(f"Your score: {score}")
+    if(score>hiscore):
+        # write this hiscore to the file
+        with open("hiscore.txt", "w") as f:
+            f.write(str(score))
+
+    return score
+
+game()
