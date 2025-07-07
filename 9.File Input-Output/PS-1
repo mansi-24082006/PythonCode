@@ -1,0 +1,11 @@
+###CERATE A POEM.TXT FILE AND WAP TO READ THE TEXT FROM A GIVEN FILE AND FIND OUT WHETHER IT CONTAINS THE WORD 'TWINKLE'
+
+f = open("poem.txt")
+content = f.read()
+if("twinkle" in content):
+    print("The word twinkle is present in this file")
+
+else:
+    print("The word twinkle is not present in this file")
+
+f.close()
