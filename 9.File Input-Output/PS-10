@@ -1,0 +1,5 @@
+###WAP TO WIPE OUT THE CONTENTS OF A FILE USING PYTHON
+
+
+with open("this_copy.txt", "w") as f:
+    f.write("")
