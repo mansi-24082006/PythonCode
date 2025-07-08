@@ -1,0 +1,3 @@
+for num in range(200, 401):
+    if num % 5 == 0 and num % 3 == 0:
+        print(num, end=" ")
