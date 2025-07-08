@@ -1,0 +1,7 @@
+data = [10, 3.14, "Hello", [1,2,3], (4,5,6), {"name":"Mansi","age":20}, True]
+
+for item in data:
+    print("Value:", item)
+    print("Type:", type(item))
+    print("ID:", id(item))
+    print()
