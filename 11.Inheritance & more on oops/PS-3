@@ -1,0 +1,20 @@
+###CREATE A CLASS EMPLOYEE AND ADD SALARY AND INCREMENT PROPERTIES TO IT . 
+WRITE A METHOD salaryAfterIncrement METHOD WITH A @PROPERTY DECORATOR WITH A SETTER WHICH CHANGES THE VALUE OF INCREMENT BASED ON THE SALARY.
+
+class Employee:
+  salary=200
+  increment = 20
+
+  @property
+  def salaryAfterIncrement(self):
+    return (self.salary + self.salary * (self.increment/100))
+
+  @salaryAfterIncrement.setter
+  def salaryAfterIncrement(self, salary):
+        self.increment =  ((salary/self.salary) -1)*100
+
+
+e = Employee()
+# print(e.salaryAfterIncrement)
+e.salaryAfterIncrement = 280.8
+print(e.increment)
