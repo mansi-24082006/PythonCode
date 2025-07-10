@@ -1,0 +1,13 @@
+###CREATE A CLASS 'PETS' FROM A CLASS 'ANIMALS' AND FURTHER CREATE A CLASS 'DOG' FROM 'PETS'. ADD A METHOD 'BARK' TO CLASS 'DOG'
+
+class Animals:
+  pass
+class Pets(Animals):
+  pass
+class Dog(Pets):
+
+  @staticmethod
+  def bark():
+    print("Bow Bow Bow....")
+d = Dog()
+d.bark()
