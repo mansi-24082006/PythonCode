@@ -1,0 +1,30 @@
+###WRITE A CLASS TRAIN WHICH HAS METHODS TO BOOK A TICKET , GET STATUS(NO.OF SETS ) & GET FARE INFORMATION OF TRAINS RUNNING UNDER INDIAN RAILWAYS
+
+from random import randint  # Importing randint to generate random fare
+
+# Define a Train class
+class Train:
+    # Constructor to initialize train number
+    def __init__(self, trainNo):
+        self.trainNo = trainNo
+
+    # Method to book a ticket
+    def book(self, fro, to):
+        print(f"Ticket is booked in train no: {self.trainNo} from {fro} to {to}") 
+
+    # Method to get train running status
+    def getStatus(self):
+        print(f"Train no: {self.trainNo} is running on time") 
+
+    # Method to get random fare between two stations
+    def getFare(self, fro, to):
+        print(f"Ticket fare in train no: {self.trainNo} from {fro} to {to} is {randint(222, 5555)}")  
+
+# Create an object of Train class
+t = Train(11399)
+
+# Call methods using object
+t.book("Surat", "Delhi")
+t.getStatus()
+t.getFare("Surat", "Delhi")
+
