@@ -1,0 +1,11 @@
+###WRITE __STR__() METHOD TO PRINT THE VECTOR AS FOLLOWS:
+7i+8j+10k assume vector of dimension 3 for this problem
+
+class Vector:
+    def __init__(self, values):
+        self.values = values  # Must be a list of 3 numbers: [i, j, k]
+
+    def __str__(self):
+        return f"{self.values[0]}i+{self.values[1]}j+{self.values[2]}k"
+v = Vector([7, 8, 10])
+print(v)
