@@ -2,23 +2,23 @@
 
 class Complex:
     # Constructor to initialize real and imaginary parts
-    def __init__(self, real, imag):
-        self.real = real
-        self.imag = imag
+    def __init__(self, r, i):
+        self.r = r
+        self.i = i
 
     # Overload '+' operator for complex number addition
     def __add__(self, other):
-        return Complex(self.real + other.real, self.imag + other.imag)
+        return Complex(self.r + other.r, self.i + other.i)
 
     # Overload '*' operator for complex number multiplication
     def __mul__(self, other):
-        real_part = self.real * other.real - self.imag * other.imag
-        imag_part = self.real * other.imag + self.imag * other.real
+        real_part = self.r * other.r - self.i * other.i
+        imag_part = self.r * other.i + self.i * other.r
         return Complex(real_part, imag_part)
 
     # String representation of complex number
     def __str__(self):
-        return f"{self.real} + {self.imag}i"
+        return f"{self.r} + {self.i}i"
 
 # Create two complex number objects
 c1 = Complex(3, 2)
