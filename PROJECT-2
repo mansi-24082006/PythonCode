@@ -1,0 +1,46 @@
+### THE PERFECT GUESS
+WE ARE GOING TO WRITE A PROGRAM THAT GENERATES A RANDOM NUMBERS AND ASKS THE USER TO GUESS IT.
+IF THE PLAYER'S GUESS IS HIGHER THAN THE ACTUAL NUMBERS , THE PROGRAM DISPLAYS "LOWER NUBER PLEASE" SIMILARLY IF THE USER'S GUESS IS TO LOW, THE PROGRAM PRINTS "HIGHER NUMBER PLEASE" WHEN THE USER GUESSES THE CORRECT NUMBER,THE PROGRAM DISPLAYS THE NUMBER OF GUESSES THE PLAYER USED TO ARRIVCE AT THE NUMBER...
+
+import random  # Import random module
+n = random.randint(1, 100)  # Generate random number between 1 and 100
+a = -1  # Initialize guess variable
+guesses = 1  # Count attempts
+
+while a != n:  # Loop until correct guess
+    a = int(input("Guess the number:  "))  # Take user input
+    if a > n:
+        print("Lower Number Please..")  # Hint: too high
+        guesses += 1
+    elif a < n:
+        print("Higher Number Please..")  # Hint: too low
+        guesses += 1
+
+print(f"You have guessed number {n} correctly in {guesses} attempts")  # Success message
+
+
+
+---------------------FINALLY 😅
+Guess the number:  50
+Higher Number Please..
+Guess the number:  75
+Higher Number Please..
+Guess the number:  80
+Higher Number Please..
+Guess the number:  90
+Lower Number Please..
+Guess the number:  85
+Lower Number Please..
+Guess the number:  80
+Higher Number Please..
+Guess the number:  84
+Lower Number Please..
+Guess the number:  83
+Lower Number Please..
+Guess the number:  83
+Lower Number Please..
+Guess the number:  82
+Lower Number Please..
+Guess the number:  81
+You have guessed number 81 correctly in 11 attempts
+
