@@ -1,0 +1,65 @@
+###ImPlement a Student library System using ooPs where 
+ Students can borrow a book from the list  of books 
+Create a separate Library and Student dass. 
+Your program must be menu driven You are free to choose 
+methods and attributes of your choice to implement this 
+fuctionality in python
+
+class Library:
+    def __init__(self, books):
+        self.available_books = books
+
+    def display_books(self):
+        print("\n📚 Available Books:")
+        for book in self.available_books:
+            print(f" - {book}")
+        print()
+
+    def borrow_book(self, book_name):
+        if book_name in self.available_books:
+            self.available_books.remove(book_name)
+            print(f"✅ You have borrowed '{book_name}'. Please return it on time.")
+        else:
+            print(f"❌ Sorry, '{book_name}' is not available or already borrowed.")
+
+    def return_book(self, book_name):
+        self.available_books.append(book_name)
+        print(f"🔁 Thank you for returning '{book_name}'.")
+
+
+class Student:
+    def request_book(self):
+        book = input("Enter the name of the book you want to borrow: ")
+        return book
+
+    def return_book(self):
+        book = input("Enter the name of the book you want to return: ")
+        return book
+
+
+# Main Program
+library = Library(["Python Programming", "Data Structures", "Machine Learning", "AI Basics", "OOP in Java"])
+student = Student()
+
+while True:
+    print("\n======= 📖 STUDENT LIBRARY MENU 📖 =======")
+    print("1. Display Available Books")
+    print("2. Borrow a Book")
+    print("3. Return a Book")
+    print("4. Exit")
+    
+    choice = input("Enter your choice (1-4): ")
+
+    if choice == '1':
+        library.display_books()
+    elif choice == '2':
+        requested_book = student.request_book()
+        library.borrow_book(requested_book)
+    elif choice == '3':
+        returned_book = student.return_book()
+        library.return_book(returned_book)
+    elif choice == '4':
+        print("👋 Thank you for using the Library System. Goodbye!")
+        break
+    else:
+        print("⚠️ Invalid choice. Please select from 1 to 4.")
