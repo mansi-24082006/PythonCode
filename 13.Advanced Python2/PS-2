@@ -1,0 +1,12 @@
+##Write a program to input name, marks and phone number of a shudent and 
+format it using the format function like below:
+"The name of the student is Dimple , her marks are 100 and phonenumber is 999999999"
+
+
+name = input("Enter name: ")
+marks = int(input("Enter marks: "))
+phone = int(input("Phone number: "))
+
+s = "The name of the student is {}, his marks are {} and phone number is {}".format(name, marks, phone)
+
+print(s)
