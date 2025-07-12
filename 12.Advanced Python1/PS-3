@@ -1,0 +1,6 @@
+#WRITE A LIST COMPREWHENSION TO PRINT A LIST WHICH CONTAINS THE MULTIPLICATION TABLE OF A USER ENTERED NUMBER..
+
+n = int(input("Enter a number: "))
+
+table = [n*i for i in range(1, 11)]
+print(table)
