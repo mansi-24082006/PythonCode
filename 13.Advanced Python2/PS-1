@@ -1,1 +1,22 @@
 #CREATE TWO VIRTUAL ENVIRONMENTS , INSTALL FEW PACKAGES IN THE FIRST ONE . HOW DO YOU CRATE A SIMILAR ENVIRONMENT IN THE SECOND ONE?
+
+🎯 Step 1: Create the First Virtual Environment
+    python -m venv env1
+
+🔁 Step 2: Activate env1
+    env1\Scripts\activate
+
+📦 Step 3: Install Some Packages in env1
+    pip install numpy pandas flask
+
+📝 Step 4: Freeze Requirements of env1
+    pip freeze > requirements.txt
+
+🆕 Step 5: Create the Second Virtual Environment
+    python -m venv env2
+
+🔁 Step 6: Activate env2
+    env2\Scripts\activate
+
+📥 Step 7: Install Same Packages in env2
+    pip install -r requirements.txt
