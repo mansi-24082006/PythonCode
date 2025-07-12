@@ -1,2 +1,23 @@
 ###WRITE A PROGRAM TO OPEN THREE FILES 1.TXT,2.TXT,3.TXT . IF ANY OF THESE FILES ARE NOT PRESENT, A MESSAGE WITHOUT EXISTING THE PROGRAM MUST BE PRINTED PROMOPTING THE SAME...
 
+
+try:
+    with open("1.txt", "r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+try:
+    with open("2.txt", "r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+try:
+    with open("3.txt", "r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+
+print("Thank You!")
