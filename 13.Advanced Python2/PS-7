@@ -1,0 +1,24 @@
+###EXPLORE THE FLASK MODULE AND CREATE A WEB SERVER USING FLASK & PYTHON..
+
+📦 1. Install Flask
+pip install flask
+
+🗂️ 2. Create Project Structure
+flask_app/
+│
+├── app.py
+└── templates/
+    └── index.html
+
+
+🧠 3. Code for app.py (Your Flask Server)
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+app.run()
+
+▶️ 5. Run the Server
