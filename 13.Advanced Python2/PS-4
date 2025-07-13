@@ -1,0 +1,11 @@
+###WAP TO FILTER A LIST OF NUMBERS WHICH ARE DIVISIBLE BY 5..
+
+def divisible(n):
+    if(n%5 == 0):
+        return True
+    return False
+
+a  = [1,2,34234,53,64343,999,9090,890,346, 65,754,45,55]
+
+f = list(filter(divisible, a))
+print(f)
