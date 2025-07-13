@@ -1,0 +1,6 @@
+### A LIST CONTAINS THE MULTIPLICATION TABLE OF 7. WAP TO CONVERT IT TO A VERTICAL STRING OF SAME NUMBERS (7 14---)...
+
+table = [str(7*i) for i in range(1, 11)]
+
+s = "\n".join(table)
+print(s)
