@@ -1,0 +1,10 @@
+###WAP TO FIND THE MAXIMUM OF THE NUMBERS IN A LIST USING THE REDUCE FUNCTION..
+
+from functools import reduce
+l  = [5,67,89,100,45,2312,89,90,13,56]
+def MAX(a, b):
+    if (a>b):
+        return a 
+    return b
+
+print(reduce(MAX, l))
