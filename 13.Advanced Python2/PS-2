@@ -1,6 +1,6 @@
 ##Write a program to input name, marks and phone number of a shudent and 
 format it using the format function like below:
-"The name of the student is Dimple , her marks are 100 and phonenumber is 999999999"
+"The name of the student is Dimple , her marks are 100 and phonenumber is 99999 99999"
 
 
 name = input("Enter name: ")
