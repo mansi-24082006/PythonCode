@@ -1,0 +1,10 @@
+###RUN PIP FREEZE FOR THE SYSTEM INTERPRETER. TAKE THE CONTENTS AND CREATE A SIMILAR VIRTUALENV.
+
+✅ Step 1: Run pip freeze in your system interpreter
+pip freeze > requirements.txt
+
+✅ Step 2: Create a new virtual environment
+python -m venv myenv
+
+✅ Step 3: Install all packages from requirements.txt
+pip install -r requirements.txt
