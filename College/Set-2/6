@@ -1,0 +1,13 @@
+#practical6
+ch = input("Enter Character : ")
+if(ch=='A' or ch=='a' or ch=='E' or ch =='e' or ch=='I'
+ or ch=='i' or ch=='O' or ch=='o' or ch=='U' or ch=='u'):
+  print("letter is vowel..")
+else:
+  print("letter is consonent...")
+
+
+
+///////////Output
+Enter Character : m
+letter is consonent...
