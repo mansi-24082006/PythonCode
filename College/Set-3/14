@@ -1,0 +1,13 @@
+#practical14
+def factorial(num):
+  if num == 0 or num == 1:
+    return 1
+  else:
+    return num*factorial(num-1)
+num = int(input("Enter The Number:"))
+print(f"The Factorial of {num} is {factorial(num)}")
+
+
+//////////Output
+Enter The Number:6
+The Factorial of 6 is 720
