@@ -1,0 +1,33 @@
+#practical7
+list = []
+list.append(3)
+list.extend(range(1,10))
+list.insert(4,(1,2,3))
+print(list)
+print("Length of The List: " ,len(list))
+print("The Value of Index 2 is: ", list[2])
+print("The Ocuureences of element located index at 2: ", list.count(list[2]))
+list.reverse()
+print("List in Reverse Order: ", list)
+a = int(input('Enter The Value You want to Find In List: '))
+print(a in  list)
+list.pop()
+print('The List after using pop: ',list)
+list.remove(1)
+print('The List after using remove: ',list)
+list.clear()
+print(print('The List after using clear: ',list))
+
+
+
+///////////Output
+[3, 1, 2, 3, (1, 2, 3), 4, 5, 6, 7, 8, 9]
+Length of The List:  11
+The Value of Index 2 is:  2
+The Ocuureences of element located index at 2:  1
+List in Reverse Order:  [9, 8, 7, 6, 5, 4, (1, 2, 3), 3, 2, 1, 3]
+Enter The Value You want to Find In List: 5
+True
+The List after using pop:  [9, 8, 7, 6, 5, 4, (1, 2, 3), 3, 2, 1]
+The List after using remove:  [9, 8, 7, 6, 5, 4, (1, 2, 3), 3, 2]
+The List after using clear:  []
