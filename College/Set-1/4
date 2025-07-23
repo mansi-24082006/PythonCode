@@ -1,3 +1,9 @@
-filename = input("Enter the filename: ")
-ext = filename.split(".")[-1]
-print("The extension of the file is:", ext)
+#practical4
+filename = input("Enter a filename:")
+extension = filename.split(".")[-1]
+print(extension)
+
+
+/////////////Output
+Enter a filename:file.csv
+csv
