@@ -1,19 +1,29 @@
+#practical-1
 print("Simple Calculator")
-a = float(input("Enter 1st number: "))
-op = input("Enter operator (+, -, *, /, //, **): ")
-b = float(input("Enter 2nd number: "))
+x=int(input("Enter The First Num1:"))
+op=input("Enter Operator (+,-,*,/,//,**) :")
+y=int(input("Enter The second Num2:"))
 
 if op == "+":
-    print("Result:", a + b)
+  print("Addition is :", x + y)
 elif op == "-":
-    print("Result:", a - b)
+  print("Substraction is : ", x - y)
 elif op == "*":
-    print("Result:", a * b)
+  print("MultiPlication is : ", x * y)
 elif op == "/":
-    print("Result:", a / b if b != 0 else "Error: Division by zero")
+  print("Division is : ", x / y if y != 0 else "Error: Division by Zero")
 elif op == "//":
-    print("Result:", a // b if b != 0 else "Error: Division by zero")
+  print("floor Division is : ", x // y if y !=0 else "Error: Division by Zero")
 elif op == "**":
-    print("Result:", a ** b)
+ print("Exponent Operation is: ", x ** y)
 else:
-    print("Invalid operator")
+  print("Invalid  Opeartor...")
+
+
+
+  ///////////////Output
+  Simple Calculator
+Enter The First Num1:8
+Enter Operator (+,-,*,/,//,**) ://
+Enter The second Num2:3
+floor Division :  2
