@@ -1,7 +1,39 @@
-data = [10, 3.14, "Hello", [1,2,3], (4,5,6), {"name":"Mansi","age":20}, True]
+#practical2
+data = [100, 4.14, "SSASIT", [1,3], (3,6), {"name":"Mansi","age":19}, True]
 
 for item in data:
     print("Value:", item)
     print("Type:", type(item))
     print("ID:", id(item))
     print()
+
+
+
+///////////////Output
+Value: 100
+Type: <class 'int'>
+ID: 10760904
+
+Value: 4.14
+Type: <class 'float'>
+ID: 133642207728560
+
+Value: SSASIT
+Type: <class 'str'>
+ID: 133641939349424
+
+Value: [1, 3]
+Type: <class 'list'>
+ID: 133642206416384
+
+Value: (3, 6)
+Type: <class 'tuple'>
+ID: 133642207420992
+
+Value: {'name': 'Mansi', 'age': 19}
+Type: <class 'dict'>
+ID: 133642207394304
+
+Value: True
+Type: <class 'bool'>
+ID: 9696896
