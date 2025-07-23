@@ -1,9 +1,12 @@
 #practical4
-filename = input("Enter a filename:")
-extension = filename.split(".")[-1]
-print(extension)
+import os
+fn,fe = os.path.splitext('File.txt')
+print(fn)
+print(fe)
+
+
 
 
 /////////////Output
-Enter a filename:file.csv
-csv
+File
+.txt
