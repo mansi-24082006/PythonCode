@@ -1,0 +1,28 @@
+#practical 9
+dic = {}
+
+#add values with keys
+dic.update({"shivangi":78,"rohan":87,"ravi":56,"suhani":91})
+
+#print dictionary
+print(dic)
+
+#get values of specific key
+key = input('enter the key: ')
+value = dic.get(key,'unknown')  #default value will be unknown if key not found
+print('value of',key,' is',value)
+
+#sorted dictionary
+sorted_dic = sorted(dic.keys())
+print('the sorted dictionary: ',sorted_dic)
+
+
+
+
+/////////Output
+{'shivangi': 78, 'rohan': 87, 'ravi': 56, 'suhani': 91}
+enter the key: rohan
+value of rohan  is 87
+the sorted dictionary:  ['ravi', 'rohan', 'shivangi', 'suhani']
+
+=== Code Execution Successful ===
