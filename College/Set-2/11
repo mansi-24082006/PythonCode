@@ -1,0 +1,26 @@
+#practical11
+def fun():
+  for i in range(1,11):
+     if i%4 == 0:
+        print('computer')
+     elif i%5 == 0:
+        print('department')
+     elif i%4 == 0 and i%5 ==0:
+       print('Computer Department')
+     else:
+       print(i)
+#calling function
+fun()
+
+
+////////////////////Output
+1
+2
+3
+computer
+department
+6
+7
+computer
+9
+department
