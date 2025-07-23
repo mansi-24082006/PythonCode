@@ -1,3 +1,11 @@
-List1 = ['red', 'blue', 'green', 'yellow', 'white', 'black']
-print("First color:", List1[0])
-print("Last color:", List1[-1])
+List1 = ['red','blue','green','yellow','white','black']
+print("First colour : ", List1[0])
+print("Last Colour : ", List1[-1])
+
+
+
+
+
+////////////Output
+First colour :  red
+Last Colour :  black
