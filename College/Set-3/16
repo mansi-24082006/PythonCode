@@ -1,0 +1,26 @@
+#practical16
+def fibonacci_series(n):
+    fib_series = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_series.append(a)
+        a, b = b, a + b
+    return fib_series
+
+# Taking input from the user
+n = int(input("Enter the number of terms: "))
+
+# Handling invalid input
+if n <= 0:
+    print("Please enter a positive integer.")
+else:
+    result = fibonacci_series(n)
+    print("Fibonacci series for", n, "terms:")
+    print(result)
+
+
+
+///////////////Output
+Enter the number of terms: 5
+Fibonacci series for 5 terms:
+[0, 1, 1, 2, 3]
