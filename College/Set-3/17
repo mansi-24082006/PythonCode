@@ -1,0 +1,49 @@
+#practical17
+# Function definitions
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
+
+def modulo(x, y):
+    if y != 0:
+        return x % y
+    else:
+        return "Cannot find modulo with zero"
+
+# Taking input from the user
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+# Performing operations
+print("Addition:", add(a, b))
+print("Subtraction:", subtract(a, b))
+print("Multiplication:", multiply(a, b))
+print("Division:", divide(a, b))
+print("Modulo:", modulo(a, b))
+
+
+
+
+
+
+
+
+///////////////Output
+Enter first number: 6
+Enter second number: 7
+Addition: 13
+Subtraction: -1
+Multiplication: 42
+Division: 0.8571428571428571
+Modulo: 6
