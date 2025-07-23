@@ -1,0 +1,19 @@
+#practical8
+tuple = (10,20,30,20,40)
+print(tuple)
+print('The length of this tuple:' ,len(tuple))
+print('The Sum of all the elements: ',sum(tuple))
+print('The minimum value from the tuple ',min(tuple))
+print('The maximum value from this tuple ',max(tuple))
+print('The sorted tuple ', sorted(tuple))
+
+
+
+
+/////////////Output
+(10, 20, 30, 20, 40)
+The length of this tuple: 5
+The Sum of all the elements:  120
+The minimum value from the tuple  10
+The maximum value from this tuple  40
+The sorted tuple  [10, 20, 20, 30, 40]
