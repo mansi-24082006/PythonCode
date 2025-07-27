@@ -14,10 +14,8 @@ print("Modified word:", result)
 
 
 ////////////////Output
-Enter a word: cry
-Modified word: crying
 
-Enter a word: fly
-Modified word: flying
+Enter a word: flying
+Modified word: flyingly
 
 === Code Execution Successful ===
