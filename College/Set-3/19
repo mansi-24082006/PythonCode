@@ -1,0 +1,9 @@
+#practical19
+with open(input("Filename :") ,'rb') as f:
+  print("First 15 Bytes:",f.read(15))
+
+
+
+  ///////////////Output
+  Filename :my_new_file.txt
+First 15 Bytes: b'Hello \nThis is '
