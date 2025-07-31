@@ -1,0 +1,22 @@
+#practical-18
+file_name = "my_new_file.txt"  # Replace with your file name
+content = "Hello \nThis is Content for the new file. \nHii This is My site."
+
+# Write content to the file
+with open(file_name, "w") as file:
+    file.write(content)
+print("This is My Content with the length of each line in file")
+
+
+# Read content from the file and print the length of each line
+with open(file_name, 'r') as file:
+    for line_number, line in enumerate(file, 1):
+        stripped_line = line.strip()  # Remove leading/trailing whitespaces including newlines
+        print(f"Line {line_number}: '{stripped_line}' (Length: {len(stripped_line)})")
+
+///////////////Output
+
+This is My Content with the length of each line in file
+Line 1: 'Hello' (Length: 5)
+Line 2: 'This is Content for the new file.' (Length: 33)
+Line 3: 'Hii This is My site.' (Length: 20)
