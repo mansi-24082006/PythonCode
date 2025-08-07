@@ -1,0 +1,56 @@
+#practical26
+import pandas as pd
+import random
+with open("color1.txt",'r') as file:
+   for line in file:
+    content  = file.read()
+    print("Uploading:\n",content)
+    print("\nStreaming:")
+with open("color1.txt",'r') as file:
+    for l in file:
+      x=l.strip()
+      print(x)
+    print("\nSampling method:")
+with open("color1.txt","r") as file:
+     lines = file.readlines()
+     for line in lines:
+        values = line.split(",")
+        print("\n" , values)
+
+
+
+
+
+////////////////////Output
+Uploading:
+ blue    20
+black   34
+orange  4
+pink    9
+red     40
+green   45
+
+Streaming:
+color  value
+blue    20
+black   34
+orange  4
+pink    9
+red     40
+green   45
+
+Sampling method:
+
+ ['color  value\n']
+
+ ['blue    20\n']
+
+ ['black   34\n']
+
+ ['orange  4\n']
+
+ ['pink    9\n']
+
+ ['red     40\n']
+
+ ['green   45']
