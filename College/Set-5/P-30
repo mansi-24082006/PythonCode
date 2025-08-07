@@ -1,0 +1,41 @@
+import pandas as pd
+
+data = {
+    'Name': ['Alice', 'Bob', 'Alice', 'David', 'Bob'],
+    'Age': [25, 30, 25, 22, 30],
+    'City': ['NY', 'LA', 'NY', 'Chicago', 'LA']
+}
+
+df = pd.DataFrame(data)
+
+df_no_duplicates = df.drop_duplicates()
+
+print("Original Data:")
+print(df)
+print("\nData after removing duplicates:")
+print(df_no_duplicates)
+
+
+
+
+
+
+
+
+
+////////////////////////Output
+Original Data:
+    Name  Age     City
+0  Alice   25       NY
+1    Bob   30       LA
+2  Alice   25       NY
+3  David   22  Chicago
+4    Bob   30       LA
+
+Data after removing duplicates:
+    Name  Age     City
+0  Alice   25       NY
+1    Bob   30       LA
+3  David   22  Chicago
+
+=== Code Execution Successful ===
