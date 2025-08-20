@@ -1,4 +1,3 @@
-#practical28
 # practical28
 import matplotlib
 matplotlib.use('TkAgg')
