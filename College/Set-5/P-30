@@ -1,41 +1,14 @@
+from lxml import objectify
 import pandas as pd
+xml = objectify.parse(open('XMLData2.xml'))
+root = xml.getroot()
+df = pd.DataFrame(columns=('Number', 'String', 'Boolean'))
+for i in range(0,4):
+obj = root.getchildren()[i].getchildren()
+row = dict(zip(['Number', 'String', 'Boolean'],
 
-data = {
-    'Name': ['Alice', 'Bob', 'Alice', 'David', 'Bob'],
-    'Age': [25, 30, 25, 22, 30],
-    'City': ['NY', 'LA', 'NY', 'Chicago', 'LA']
-}
-
-df = pd.DataFrame(data)
-
-df_no_duplicates = df.drop_duplicates()
-
-print("Original Data:")
-print(df)
-print("\nData after removing duplicates:")
-print(df_no_duplicates)
-
-
-
-
-
-
-
-
-
-////////////////////////Output
-Original Data:
-    Name  Age     City
-0  Alice   25       NY
-1    Bob   30       LA
-2  Alice   25       NY
-3  David   22  Chicago
-4    Bob   30       LA
-
-Data after removing duplicates:
-    Name  Age     City
-0  Alice   25       NY
-1    Bob   30       LA
-3  David   22  Chicago
-
-=== Code Execution Successful ===
+[obj[0].text, obj[1].text,
+obj[2].text]))
+row_s = pd.Series(row)
+row_s.name = i
+df = df.append(row_s)
