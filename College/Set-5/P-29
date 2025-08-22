@@ -1,1 +1,16 @@
-
+from lxml import objectify
+import pandas as pd
+from distutils import util
+xml = objectify.parse(open('XMLData.xml'))
+root = xml.getroot()
+df = pd.DataFrame(columns=('Number','Boolean'))
+for i in range(0,4):
+obj = root.getchildren()[i].getchildren()
+row={'Number':obj[0].text,'Boolean':obj[2].text}
+row_s = pd.Series(row)
+row_s.name = obj[1].text #set "string-obj[1].text as index
+df = df.append(row_s)
+print(df)
+print(type(df.loc['Second']['Number']))
+print(type(df.loc['First']['Boolean']))
+print(type(df.loc['Third']['Number']))
