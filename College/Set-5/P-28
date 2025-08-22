@@ -1,41 +1,28 @@
 # practical28
-import matplotlib
-matplotlib.use('TkAgg')
-import cv2
+from PIL import Image
 import matplotlib.pyplot as plt
+  
+img = Image.open('demo.jpg' )
 
-img = cv2.imread('@two.jpg')
-if img is None:
-    raise FileNotFoundError("Image not found")
+print("Image Information:")
+print(f"Format: {img.format}")
+print(f"Mode: {img.mode}")
+print(f"Size: {img.size}")
+print(f"Width: {img.width}, Height: {img.height}")
+    
+plt.imshow(img)
+plt.axis('off') 
+plt.show()
+    
+cropped = img.crop((150,60,300,200))  
 
-height, width, channels = img.shape
-print(f"Width: {width}, Height: {height}, \nChannels: {channels}")
-print(f"Dtype: {img.dtype}")
-
-# Show original image
-plt.figure(figsize=(6, 4))
-plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-plt.title("Original Image")
-plt.axis('off')
+print("Image Information:")
+print(f"Format: {cropped.format}")
+print(f"Mode: {cropped.mode}")
+print(f"Size: {cropped.size}")
+print(f"Width: {img.width}, Height: {cropped.height}")
+plt.imshow(cropped)
+plt.axis('off') 
 plt.show()
 
-# Crop image: [startY:endY, startX:endX] = [200:650, 200:300]
-cropped = img[30:320, 230:400]  # 450px height, 100px width
-
-# Show cropped image
-plt.figure(figsize=(4, 6))
-plt.imshow(cv2.cvtColor(cropped, cv2.COLOR_BGR2RGB))
-plt.title("Cropped Image (100x450)")
-plt.axis('off')
-plt.show()
-
-
-
-
-
-
-////////////////Output
-Width: 630, Height: 360, 
-Channels: 3
-Dtype: uint8
 
